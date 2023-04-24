@@ -21,7 +21,7 @@ export const Hour = styled.div`
 	color: ${forth};
 	text-align: end;
 	padding-right: 0.4em;
-	height: 2em;
+	height: 2.2em;
 `;
 
 export const EventsContainer = styled(FlexContainer)`
@@ -39,13 +39,15 @@ export const EventsForTheDay = styled.div`
 `;
 export const EventHolderOutline = styled.div`
 	padding: 1px;
+	height: 2.2em;
 	& + * {
 		border-top: 1.5px solid ${forth};
 	}
 `;
 
 export const EventHolder = styled.div`
-	height: 2em;
+	height: 100%;
+	width: 100%;
 	background-color: ${({ isSelected, isFilled }) => isSelected ? selectedHolderColor : isFilled ? eventColor : "none"};
 	&:hover {
 		opacity: ${({ isSelected }) => isSelected ? '1' : '0.3'};
