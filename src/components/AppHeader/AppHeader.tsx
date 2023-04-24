@@ -1,4 +1,3 @@
-import { third } from '../../app-colors';
 import { getDateAddedBy, isSameDate, range } from '../../utils';
 import {
 	BottomContainer,
